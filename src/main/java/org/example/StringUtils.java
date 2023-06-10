@@ -35,13 +35,13 @@ public class StringUtils {
         List<String> result = new ArrayList<>();
         for (String s : list) {
             StringBuffer buffer = new StringBuffer();
-            String[] strings = s.split(" ");
-            strings[0] = strings[0].substring(1);
-            strings[0] = strings[0].substring(0, strings[0].length() - 1);
+            int index = s.indexOf(" ");
+            String left = s.substring(1, index - 1);
+            String right = s.substring(index + 1);
 
-            buffer.append(strings[0]);
+            buffer.append(left);
             buffer.append(" ");
-            buffer.append(strings[1]);
+            buffer.append(right);
             result.add(buffer.toString());
         }
         return result;

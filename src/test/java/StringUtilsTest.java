@@ -22,7 +22,7 @@ public class StringUtilsTest {
 
     @Test
     public void subString() {
-        List<String> list = StringUtils.subString("第14集 无聊的周末,第15集 派对惊魂夜,第16集 大仲马,第17集 长舌妇,第18集 你是坏人,第19集 情人节前奏曲,第20集 谁动了我的情人节",",");
+        List<String> list = StringUtils.subString("第11集 魅力大改造,第12集 最佳女主角,第13集 今天不是父亲节,第14集 断网 所以穿越,第15集 不能说的秘密,第16集 剩女总动员,第17集 海螺姑娘,第18集 Big Boss,第19集 我 百万富翁（上）,第20集 我 百万富翁（下）",",");
         for (String s : list) {
             System.out.println(s);
         }
